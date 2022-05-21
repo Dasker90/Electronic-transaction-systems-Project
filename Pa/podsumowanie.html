@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+	<head>
+        <meta http-equiv="Content-Type" content="text/html charset="utf-8>
+        <meta http-equiv="Content-Language" content="PL">
+        <meta name="description" content="">
+
+        <title>Koszyk</title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <style type="text/css">
+            body {
+                font-family:Helvetica,Arial,sans-serif;
+            }
+            header{
+                text-align: center;
+            }
+        </style>
+        <script>  
+            function randomString() {  
+                        //define a variable consisting alphabets in small and capital letter  
+                var characters = "01234567891011121314151617181920";  
+                          
+                        //specify the length for the new string  
+                var lenString = 10;  
+                var randomstring = '';  
+              
+                        //loop to select a new character in each iteration  
+                for (var i=0; i<lenString; i++) {  
+                    var rnum = Math.floor(Math.random() * characters.length);  
+                    randomstring += characters.substring(rnum, rnum+1);  
+                }  
+              
+                         //display the generated string   
+                document.getElementById("randomfield").innerHTML = randomstring;  
+            }  
+            </script>  
+	</head>
+	<body>
+        <header align="center" style="background-color:#7FFFD4" style="border:2px solid DodgerBlue;"><a><img src="LOGO.SKLEP.JPG" width="250" height="180" alt="logo"></a>
+            <h1 style="color:red">SKLEP INTERNETOWY MARKUN&SKURAŚ</h1>
+        </header>
+        <center>  
+            
+            <h1><h3> Twoje zamówienie to </h3></h1>
+            <h1>DZIĘKUJEMY ZA ZAKUP W NASZEJ FIRMIE</h1>
+            <p Text align="center";> Twoje zamówienie otrzymało numer: </p>
+            <input style="background=#00FF00" type="button" value="POKAŻ NUMER ZAMÓWIENIA" onClick="randomString();">  
+            <br><br>  
+            <b><p id="randomfield" style="color: #008080" style="background=#008080"> </p></b>
+            <p> Przewidywana data dostawy: 26.05.2022 r</p>
+            <p> O zmianie statusu zamównienia będziemy cię na bieżąco informować </p>  
+            </form>  
+              
+            </center>  
+        <footer style="border:4px solid DodgerBlue; background:#7FFFD4;">
+            <p></p>
+            <div align="center";>
+                <button class="btn-1" STYLE="font: 15pt Arial; font-style: italic; font-weight: bold; color:black; background:#00FFFF; width:300px; height:50px;"><a href="../Index/Stronaglowna.html">Strona Główna</a></button>
+                <button class="btn-2" STYLE="font: 15pt Arial; font-style: italic; font-weight: bold; color:black; background:#00FFFF; width:300px; height:50px;"><a href="../Kontakt/kontakt.html">Kontakt</button>
+                <button class="btn-2" STYLE="font: 15pt Arial; font-style: italic; font-weight: bold; color:black; background:#00FFFF; width:300px; height:50px;"><a href="../O firmie/firma.html">O firmie</button>
+                <button class="btn-1" STYLE="font: 15pt Arial; font-style: italic; font-weight: bold; color:black; background:#00FFFF; width:300px; height:50px;"><a href="../Produkty/produkty.html">Produkty</a></button>
+            </div>
+            <p></p>
+        </footer>
+        <article align="center";>
+            <p style="color:red">Strona internetowa powstała w ramach projektu zaliczeniowego:</p>
+            <p style="color:red">Przedmiot: Systemy trnsakcji elektronicznych - Projekt</p>
+            <link href="https://www.w3schools.com/html/styles.css">
+        </article>
+        <footer align="center";>
+            <p style="color:red">Autor: <a href="damian.skuras89@gmail.com">Damian Skuraś</a></p>
+            <p style="color:red">Autor: <a href="mateusz.markun@gmail.com">Mateusz Markun</a></p>
+            <p style="color:red">Wszelkie Prawa zastrzeżone</p>
+        </footer>
+	</body>
+</html>
